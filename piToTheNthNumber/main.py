@@ -4,7 +4,8 @@
 
 from math import pi
 
-def printNPlacesOfPi(limit):
+
+def printNPlacesOfPi():
     userInput = input("Enter number of places to print pi to (min = 1, max = 1000):")
     try:
         numberOfPlaces = int(userInput)
@@ -14,4 +15,6 @@ def printNPlacesOfPi(limit):
         numberOfPlaces = 1000
     if numberOfPlaces < 1:
         numberOfPlaces = 1
-    '{:.{}f}'.format(pi, numberOfPlaces)
+    print('{:.{}f}'.format(pi, numberOfPlaces))
+
+printNPlacesOfPi()
