@@ -12,7 +12,7 @@ def printFibSeqToNthNum():
     if numberOfPlaces < 1:
         numberOfPlaces = 1
     n = np.array([range(0,numberOfPlaces)])
-    fibArray = np.array((1+sqrt(5))**n-(1-sqrt(5))**n)/(2**n*sqrt(5))
+    fibArray = ((1+sqrt(5))**n-(1-sqrt(5))**n)/(2**n*sqrt(5))
     print(fibArray)
 
 printFibSeqToNthNum()
